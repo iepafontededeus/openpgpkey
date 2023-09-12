@@ -107,7 +107,7 @@ function num_jse() {
 
 function out_jse() {
 	if (co == 0) {
-		document.write('Your search did not match any documents.<p>Make sure all keywords are spelt correctly.<br>Try different or more general keywords.');
+		document.write('Sua pesquisa não corresponde com nenhum documento.<p>Tenha certeza que todas as palavras estejam escritas corretamente.<br>Tente palavras-chaves diferentes ou mais gerais.');
 		return;
 	}
 	for (var a = 0; a < r.length; a++) {
