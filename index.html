@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="IEPAFDD OpenPGP WKD">
+
+      <title>IEPAFDD OpenPGP WKD</title>
+      <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+      <link href="assets/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+      <style type="text/css">
+        html,body {
+          height: 100%;
+        }
+        #wrap {
+          min-height: 100%;
+          height: auto !important;
+          height: 100%;
+          margin: 0 auto -60px;
+        }
+        #push,#footer {
+          height: 60px;
+        }
+        #footer {
+          background-color: #f5f5f5;
+        }
+        .container .credit {
+            margin: 20px 0;
+        }
+      </style>
+      <script language="JavaScript1.3" type="text/javascript" src="jse_form.js">
+</script>
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="container">
+        <div class="page-header" id="banner" style="border-bottom: 0px;">
+          <div class="row">
+            <div class="col-lg-12">
+              <h1 class="text-center"><strong>IEP A Fonte de Deus</strong> OpenPGP WKD</h1>
+            </div>
+          </div>
+        </div>
+      </div><!--closing page header container-->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <form name="jse_Form" onsubmit="search_form(jse_Form);return false">
+              <div class="control-group">
+                <div class="controls" style="max-width:30em; margin:0 auto;">
+                  <input name="d" class="form-control" type="text" placeholder="Procure usando email ou id." style="font-size: 1.5em; line-height: 1.5em; height: 2em;" required autofocus  pattern="(\d|(\d,\d{0,2}))" oninvalid="this.setCustomValidity('Por favor, preencha este campo')" oninput="this.setCustomValidity('')"/>
+                </div>
+              </div>
+              <div class="control-group text-center" style="margin-top: 0.5em;">
+                <div class="controls">
+                  <button value="Go" onclick="search_form(jse_Form)" class="btn btn-primary">
+                    <span class="glyphicon glyphicon-search"></span>
+                    Procurar chave
+                  </button>
+                  <button type="button" class="btn btn-primary" onClick="window.location.href='https://diretorio.iepafontededeus.com.br/'">
+                    <span class="glyphicon glyphicon-cloud-upload"></span>
+                    Diretório
+                  </button>
+                </div>
+              </div>
+              <div class="text-center" style="margin-top: 0.5em;">
+              </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="ContactLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title" id="ContactLabel">###ENTERNAMEHERE###'s OpenPGP Public Key</h4>
+            </div>
+            <div class="modal-body">
+              <p>If you have any issues or concerns about this site, or if you wish to peer with this server, please contact me via the email address within the below public key.</p>
+              <pre>
+###ENTERPUBLICKEYHERE###
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="about" tabindex="-1" role="dialog" aria-labelledby="AboutLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title" id="AboutLabel">About this Server</h4>
+            </div>
+            <div class="modal-body">
+              <p><strong>OpenPGP</strong> is a method of encrypting and/or signing data (for example an email) in a secure “<em>end to end</em>” way.
+                This means, the message is encrypted on your computer, using the recipient’s public key,
+                in a way that the e-mail server has no knowledge of the content of the message.
+                The recipient of the message then decrypts the message on their own computer using their private key.</p>
+              <p>This server is a member of the <a href="https://sks-keyservers.net" target="_blank">sks-keyserver</a> pool of servers. It hosts OpenPGP keys in a fashion that allows them to be quickly and easily retrieved and used by different client software.</p>
+              <p>You may connect to this server by adding one of the following  entries to your OpenPGP client software.</p>
+              <div class="col-md-6">
+                <ul>
+                  <li>pool.sks-keyservers.net</li>
+                  <li>na.pool.sks-keyservers.net</li>
+                  <li>eu.pool.sks-keyservers.net</li>
+                  <li>oc.pool.sks-keyservers.net</li>
+                </ul>
+              </div>
+              <div class="col-md-offset-6">
+                <ul>
+                  <li>p80.pool.sks-keyservers.net</li>
+                  <li>ipv4.pool.sks-keyservers.net</li>
+                  <li>ipv6.pool.sks-keyservers.net</li>
+                  <li>subset.pool.sks-keyservers.net</li>
+                </ul>
+              </div>
+              <p><b>Note:</b> <i>keys.gnupg.net</i> and <i>pgp.ipfire.org</i> are both alias for pool.sks-keyservers.net. Requests sent to either of these hosts will also be served by this server.</p>
+              <hr />
+              <h5>OpenPGP Resources</h5>
+              <ul>
+                <li><a href="https://gnupg.org/" target="_blank">GnuPG Homepage</a> - The main location for the OpenPGP Standard.</li>
+                <li><a href="https://sks-keyservers.net/" target="_blank">SKS Keyserver Homepage</a> - The keyserver software running on this server.</li>
+                <li><a href="http://www.pgp.com/" target="_blank">PGP Inc.</a> - The historical home of PGP, but has since been sold to Symantec.</li>
+                <li><a href="https://emailselfdefense.fsf.org/en/" target="_blank">Email Self-defense</a> - A teaching site about how to use OpenPGP to communicate.</li>
+                <li><a href="http://en.wikipedia.org/wiki/Pretty_Good_Privacy" target="_blank">Wikipedia - Pretty Good Privacy</a> - A nice overview of what OpenPGP is.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!--Closing content wrap-->
+    <div id="footer">
+      <div class="container">
+        <div style="max-width: 20em; float: left;" >
+          <p class="muted credit small">
+            <a href="https://diretorio.iepafontededeus.com.br">Diretório IEPAFDD</a> | Departamento de Mídia | Igreja Evangélica Pentecostal A Fonte de Deus Indep.
+          </p>
+        </div>
+        <div style="float:right;">
+          <p class="muted credit small">Provido como um serviço público pelo <a href="https://diretorio.iepafontededeus.com.br">Diretório IEP A Fonte de Deus</a>.</p>
+        </div>
+      </div>
+    </div>
+    <script src="assets/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="assets/jqBootstrapValidation.js/1.3.7/jqBootstrapValidation-1.3.7.min.js"></script>
+  </body>
+</html>
