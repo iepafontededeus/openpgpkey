@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /.well-known
+Disallow: /.well-known/openpgpkey
+Disallow: /.well-known/openpgpkey/iepafontededeus.com.br
