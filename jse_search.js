@@ -107,7 +107,7 @@ function num_jse() {
 
 function out_jse() {
 	if (co == 0) {
-		document.write('Sua pesquisa não corresponde com nenhuma chave pública.<p>Tenha certeza que o email, fingerprint ou id estejam escritos corretamente.');
+		document.write('Sua pesquisa não corresponde com nenhuma chave pública.<p>Tenha certeza que o email, fingerprint ou key id estejam escritos corretamente.');
 		return;
 	}
 	for (var a = 0; a < r.length; a++) {
